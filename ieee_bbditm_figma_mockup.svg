@@ -1,0 +1,535 @@
+<svg width="2960" height="2040" viewBox="0 0 2960 2040" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients Dark Theme -->
+    <radialGradient id="dark-bg-glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 450) rotate(90) scale(450 700)">
+      <stop stop-color="#00A3FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#070A11" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dark-bg-glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 1300) rotate(90) scale(450 700)">
+      <stop stop-color="#7928CA" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#070A11" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Gradients Light Theme -->
+    <radialGradient id="light-bg-glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2350 450) rotate(90) scale(500 700)">
+      <stop stop-color="#00629B" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#F8FAFC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="light-bg-glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1800 1300) rotate(90) scale(450 700)">
+      <stop stop-color="#00A3FF" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#F8FAFC" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Neon & Shadows -->
+    <linearGradient id="neon-cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#00629B"/>
+    </linearGradient>
+    <linearGradient id="royal-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00629B"/>
+      <stop offset="100%" stop-color="#00416A"/>
+    </linearGradient>
+
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="light-card-shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+
+    <clipPath id="avatar-clip"><circle cx="48" cy="48" r="44"/></clipPath>
+  </defs>
+
+  <!-- ================================================================= -->
+  <!-- ARTBOARD 1: DARK CYBER MODE (X: 40 to 1460, Y: 40 to 2000)         -->
+  <!-- ================================================================= -->
+  <g id="Frame-Desktop-DarkMode" transform="translate(40, 40)">
+    <!-- Canvas Frame Background -->
+    <rect width="1400" height="1940" rx="24" fill="#070A11"/>
+    <rect width="1400" height="1940" rx="24" fill="url(#dark-bg-glow1)"/>
+    <rect width="1400" height="1940" rx="24" fill="url(#dark-bg-glow2)"/>
+
+    <!-- Grid lines -->
+    <g opacity="0.06" stroke="#ffffff" stroke-width="0.75" stroke-dasharray="3 3">
+      <line x1="80" y1="0" x2="80" y2="1940"/>
+      <line x1="700" y1="0" x2="700" y2="1940"/>
+      <line x1="1320" y1="0" x2="1320" y2="1940"/>
+    </g>
+
+    <!-- Artboard Tag -->
+    <rect x="80" y="-30" width="180" height="24" rx="12" fill="#00F0FF" fill-opacity="0.15"/>
+    <text x="96" y="-14" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700">● DARK MODE (CYBER)</text>
+
+    <!-- 1. NAVBAR -->
+    <g id="Dark-Navbar" transform="translate(80, 24)">
+      <rect width="1240" height="68" rx="34" fill="#0F1626" fill-opacity="0.8" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+      <!-- Brand -->
+      <polygon points="46,16 62,34 46,52 30,34" fill="none" stroke="#00F0FF" stroke-width="2"/>
+      <circle cx="46" cy="34" r="3.5" fill="#00F0FF"/>
+      <text x="74" y="41" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="18" font-weight="800">IEEE</text>
+      <text x="122" y="41" fill="#00F0FF" font-family="Inter, sans-serif" font-size="15" font-weight="600">BBDITM</text>
+      
+      <!-- Nav Links -->
+      <g fill="#94A3B8" font-family="Inter, sans-serif" font-size="14" font-weight="500">
+        <text x="360" y="40" fill="#00F0FF" font-weight="600">Home</text>
+        <text x="430" y="40">About</text>
+        <text x="500" y="40">Chapters ▾</text>
+        <text x="600" y="40">Leadership</text>
+        <text x="700" y="40">Events</text>
+        <text x="770" y="40">Research</text>
+      </g>
+
+      <!-- Theme Switcher Pill -->
+      <rect x="940" y="16" width="120" height="36" rx="18" fill="#172238" stroke="#00F0FF" stroke-opacity="0.3"/>
+      <text x="956" y="39" fill="#00F0FF" font-family="Inter, sans-serif" font-size="12" font-weight="600">🌙 Dark</text>
+      <circle cx="1038" cy="34" r="10" fill="#00F0FF" fill-opacity="0.2"/>
+      <circle cx="1038" cy="34" r="5" fill="#00F0FF"/>
+
+      <!-- CTA -->
+      <rect x="1080" y="16" width="130" height="36" rx="18" fill="url(#neon-cyan-grad)"/>
+      <text x="1114" y="39" fill="#070A11" font-family="Inter, sans-serif" font-size="13" font-weight="700">Join Branch</text>
+    </g>
+
+    <!-- 2. HERO: MODEL 1 (3D QUANTUM WIREFRAME DIAMOND) -->
+    <g id="Dark-Hero" transform="translate(80, 130)">
+      <!-- Badge -->
+      <rect x="0" y="10" width="300" height="30" rx="15" fill="#00F0FF" fill-opacity="0.1" stroke="#00F0FF" stroke-opacity="0.3"/>
+      <circle cx="18" cy="25" r="4" fill="#00F0FF" filter="url(#neon-glow)"/>
+      <text x="32" y="29" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">IEEE BBDITM STB10214 • LUCKNOW</text>
+
+      <!-- Popping Heading -->
+      <text x="0" y="100" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">INNOVATING</text>
+      <text x="0" y="160" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">TOMORROW</text>
+      <text x="0" y="220" fill="url(#neon-cyan-grad)" font-family="Inter, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">IEEE BBDITM.</text>
+
+      <text x="0" y="270" fill="#94A3B8" font-family="Inter, sans-serif" font-size="16">Empowering 500+ innovators across AI, Robotics, Power Systems,</text>
+      <text x="0" y="295" fill="#94A3B8" font-family="Inter, sans-serif" font-size="16">and Electrical Engineering with global IEEE recognition.</text>
+
+      <!-- CTA Row -->
+      <rect x="0" y="330" width="170" height="50" rx="25" fill="url(#neon-cyan-grad)" filter="url(#neon-glow)"/>
+      <text x="36" y="361" fill="#070A11" font-family="Inter, sans-serif" font-size="14" font-weight="700">Explore Chapters</text>
+
+      <rect x="190" y="330" width="140" height="50" rx="25" fill="#111A2E" stroke="#ffffff" stroke-opacity="0.15"/>
+      <text x="228" y="361" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="14" font-weight="600">Join Us →</text>
+
+      <!-- 3D MODEL 1: Holographic Wireframe Diamond -->
+      <g id="3D-Model-1-Diamond" transform="translate(740, 20)">
+        <text x="120" y="0" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">MODEL 01: 3D QUANTUM CORE</text>
+        <!-- Orbit Ellipses -->
+        <ellipse cx="230" cy="180" rx="220" ry="70" fill="none" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1.5" transform="rotate(-20 230 180)"/>
+        <ellipse cx="230" cy="180" rx="200" ry="60" fill="none" stroke="#7928CA" stroke-opacity="0.3" stroke-width="1.5" transform="rotate(25 230 180)"/>
+        <!-- 3D Diamond Mesh -->
+        <g filter="url(#neon-glow)">
+          <polygon points="230,20 370,180 230,340 90,180" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+          <line x1="230" y1="20" x2="230" y2="340" stroke="#00F0FF" stroke-opacity="0.5" stroke-width="1.5"/>
+          <line x1="90" y1="180" x2="370" y2="180" stroke="#00F0FF" stroke-opacity="0.5" stroke-width="1.5"/>
+          <line x1="230" y1="20" x2="190" y2="180" stroke="#00A3FF" stroke-width="1.5"/>
+          <line x1="230" y1="20" x2="270" y2="180" stroke="#00A3FF" stroke-width="1.5"/>
+          <line x1="190" y1="180" x2="230" y2="340" stroke="#00A3FF" stroke-width="1.5"/>
+          <line x1="270" y1="180" x2="230" y2="340" stroke="#00A3FF" stroke-width="1.5"/>
+        </g>
+        <!-- Glowing Center Node -->
+        <circle cx="230" cy="180" r="32" fill="url(#neon-cyan-grad)" fill-opacity="0.7" filter="url(#neon-glow)"/>
+        <circle cx="230" cy="180" r="12" fill="#FFFFFF"/>
+      </g>
+    </g>
+
+    <!-- 3. REAL PROFESSORS & EXECUTIVE LEADERSHIP SHOWCASE -->
+    <g id="Dark-Leadership-Section" transform="translate(80, 580)">
+      <text x="0" y="24" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" letter-spacing="2">BRANCH LEADERSHIP (STB10214)</text>
+      <text x="0" y="60" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="30" font-weight="800">Faculty Counselors &amp; Office Bearers</text>
+      <text x="0" y="88" fill="#94A3B8" font-family="Inter, sans-serif" font-size="15">Guiding technological innovation and professional ethics at BBDITM.</text>
+
+      <!-- Faculty Card 1: Branch Counselor -->
+      <g transform="translate(0, 115)">
+        <rect width="290" height="280" rx="20" fill="#0E1626" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+        <!-- Real Photo Placeholder with Frame -->
+        <circle cx="70" cy="70" r="42" fill="#1E293B" stroke="#00F0FF" stroke-width="2"/>
+        <image href="https://edu.ieee.org/in-bbdnitm/wp-content/uploads/sites/237/2-5-150x150.png" x="28" y="28" width="84" height="84" clip-path="url(#avatar-clip)"/>
+        <!-- Fallback avatar icon if image takes time -->
+        <text x="56" y="78" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="22" font-weight="700">👨‍🏫</text>
+        
+        <rect x="180" y="48" width="90" height="24" rx="12" fill="#00A3FF" fill-opacity="0.15"/>
+        <text x="194" y="64" fill="#00A3FF" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">FACULTY</text>
+
+        <text x="24" y="150" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="18" font-weight="700">Dr. Shailendra T.</text>
+        <text x="24" y="174" fill="#00F0FF" font-family="Inter, sans-serif" font-size="13" font-weight="600">Branch Counselor</text>
+        <text x="24" y="200" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Department of EE, BBDITM</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#ffffff" stroke-opacity="0.06"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">Ph.D, Senior Member IEEE</text>
+      </g>
+
+      <!-- Faculty Card 2: Faculty Advisor -->
+      <g transform="translate(315, 115)">
+        <rect width="290" height="280" rx="20" fill="#0E1626" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+        <circle cx="70" cy="70" r="42" fill="#1E293B" stroke="#00F0FF" stroke-width="2"/>
+        <text x="56" y="78" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="22" font-weight="700">👨‍🏫</text>
+        
+        <rect x="180" y="48" width="90" height="24" rx="12" fill="#00A3FF" fill-opacity="0.15"/>
+        <text x="194" y="64" fill="#00A3FF" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">ADVISOR</text>
+
+        <text x="24" y="150" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="18" font-weight="700">Prof. Anurag S.</text>
+        <text x="24" y="174" fill="#00F0FF" font-family="Inter, sans-serif" font-size="13" font-weight="600">Faculty Advisor - PES</text>
+        <text x="24" y="200" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Department of EEE, BBDITM</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#ffffff" stroke-opacity="0.06"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">M.Tech, IEEE PES Chapter</text>
+      </g>
+
+      <!-- Student Card 3: Branch Chair -->
+      <g transform="translate(630, 115)">
+        <rect width="290" height="280" rx="20" fill="#0E1626" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+        <circle cx="70" cy="70" r="42" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+        <text x="56" y="78" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="22" font-weight="700">👨‍🎓</text>
+
+        <rect x="180" y="48" width="90" height="24" rx="12" fill="#10B981" fill-opacity="0.15"/>
+        <text x="202" y="64" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">CHAIR</text>
+
+        <text x="24" y="150" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="18" font-weight="700">Ayush K. Singh</text>
+        <text x="24" y="174" fill="#10B981" font-family="Inter, sans-serif" font-size="13" font-weight="600">Student Branch Chair</text>
+        <text x="24" y="200" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">B.Tech Engineering '25</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#ffffff" stroke-opacity="0.06"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">IEEE STB10214 Executive</text>
+      </g>
+
+      <!-- Student Card 4: WIE Chair -->
+      <g transform="translate(945, 115)">
+        <rect width="295" height="280" rx="20" fill="#0E1626" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+        <circle cx="70" cy="70" r="42" fill="#1E293B" stroke="#C084FC" stroke-width="2"/>
+        <text x="56" y="78" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="22" font-weight="700">👩‍🎓</text>
+
+        <rect x="180" y="48" width="95" height="24" rx="12" fill="#C084FC" fill-opacity="0.15"/>
+        <text x="195" y="64" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">WIE CHAIR</text>
+
+        <text x="24" y="150" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="18" font-weight="700">Ananya Verma</text>
+        <text x="24" y="174" fill="#C084FC" font-family="Inter, sans-serif" font-size="13" font-weight="600">WIE Affinity Group Chair</text>
+        <text x="24" y="200" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Lead, 'My Story' Initiative</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#ffffff" stroke-opacity="0.06"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">Women In Engineering IEEE</text>
+      </g>
+    </g>
+
+    <!-- 4. MODEL 2 & MODEL 3 SHOWCASE (WORKSHOPS & 3D VIP LANYARD PASS) -->
+    <g id="Dark-3D-Models-Section" transform="translate(80, 1050)">
+      <!-- Left Card with MODEL 2: Interactive 3D Energy & Neural Sphere -->
+      <g transform="translate(0, 0)">
+        <rect width="590" height="360" rx="24" fill="#0D1525" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="1"/>
+        <text x="40" y="45" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">MODEL 02: NEURAL &amp; ENERGY SPHERE</text>
+        <text x="40" y="85" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="24" font-weight="800">Robotics &amp; Power Labs</text>
+        <text x="40" y="115" fill="#94A3B8" font-family="Inter, sans-serif" font-size="14">Real-time WebGL node simulation for PES Day &amp; AI bootcamp.</text>
+
+        <!-- Model 2 Render Illustration -->
+        <g transform="translate(360, 210)">
+          <circle cx="0" cy="0" r="95" fill="none" stroke="#00F0FF" stroke-dasharray="6 6" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="75" fill="none" stroke="#7928CA" stroke-width="2"/>
+          <circle cx="0" cy="0" r="45" fill="url(#neon-cyan-grad)" filter="url(#neon-glow)"/>
+          <circle cx="0" cy="0" r="15" fill="#FFFFFF"/>
+          <!-- Orbiting Data Nodes -->
+          <circle cx="65" cy="-45" r="5" fill="#00F0FF"/>
+          <line x1="0" y1="0" x2="65" y2="-45" stroke="#00F0FF" stroke-width="1"/>
+          <text x="75" y="-40" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="10">Telemetry: 100%</text>
+
+          <circle cx="-55" cy="55" r="4" fill="#7928CA"/>
+          <line x1="0" y1="0" x2="-55" y2="55" stroke="#7928CA" stroke-width="1"/>
+          <text x="-135" y="60" fill="#A855F7" font-family="JetBrains Mono, monospace" font-size="10">Grid Sync</text>
+        </g>
+
+        <!-- Metric pill -->
+        <rect x="40" y="270" width="180" height="42" rx="21" fill="url(#neon-cyan-grad)"/>
+        <text x="64" y="296" fill="#070A11" font-family="Inter, sans-serif" font-size="13" font-weight="700">Explore Hardware Lab</text>
+      </g>
+
+      <!-- Right Card with MODEL 3: 3D Holographic VIP Pass / Lanyard -->
+      <g transform="translate(630, 0)">
+        <rect width="610" height="360" rx="24" fill="#0D1525" stroke="#7928CA" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="40" y="45" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">MODEL 03: 3D FLIPPABLE VIP PASS</text>
+        <text x="40" y="85" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="24" font-weight="800">Annual Flagship Summit '26</text>
+        <text x="40" y="115" fill="#94A3B8" font-family="Inter, sans-serif" font-size="14">Dynamic NFC / QR ticket pass with real-time 3D tilt interaction.</text>
+
+        <!-- 3D Pass Render -->
+        <g transform="translate(380, 50)">
+          <!-- Lanyard Clip -->
+          <rect x="85" y="0" width="30" height="18" rx="4" fill="#64748B"/>
+          <line x1="100" y1="18" x2="100" y2="35" stroke="#94A3B8" stroke-width="4"/>
+          <!-- Pass Card -->
+          <rect x="10" y="35" width="180" height="250" rx="16" fill="#141E34" stroke="#00F0FF" stroke-width="1.5" filter="url(#neon-glow)"/>
+          <rect x="25" y="55" width="45" height="18" rx="9" fill="#00F0FF" fill-opacity="0.2"/>
+          <text x="32" y="68" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700">VIP PASS</text>
+          
+          <text x="25" y="105" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="15" font-weight="800">TECHNOVA '26</text>
+          <text x="25" y="125" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="10">ID: BBD-8902-STB</text>
+          
+          <!-- Barcode simulation -->
+          <g fill="#00F0FF" transform="translate(25, 230)">
+            <rect x="0" y="0" width="4" height="24"/>
+            <rect x="8" y="0" width="8" height="24"/>
+            <rect x="20" y="0" width="2" height="24"/>
+            <rect x="26" y="0" width="6" height="24"/>
+            <rect x="36" y="0" width="4" height="24"/>
+            <rect x="44" y="0" width="10" height="24"/>
+            <rect x="58" y="0" width="4" height="24"/>
+            <rect x="66" y="0" width="8" height="24"/>
+            <rect x="78" y="0" width="4" height="24"/>
+            <rect x="86" y="0" width="12" height="24"/>
+            <rect x="102" y="0" width="4" height="24"/>
+            <rect x="110" y="0" width="6" height="24"/>
+            <rect x="120" y="0" width="4" height="24"/>
+            <rect x="128" y="0" width="8" height="24"/>
+          </g>
+        </g>
+
+        <!-- CTA -->
+        <rect x="40" y="270" width="180" height="42" rx="21" fill="url(#neon-cyan-grad)"/>
+        <text x="64" y="296" fill="#070A11" font-family="Inter, sans-serif" font-size="13" font-weight="700">Claim Digital Pass →</text>
+      </g>
+    </g>
+
+    <!-- 5. SCROLL TRIGGER & POP NOTATION BANNER -->
+    <g id="Scroll-Pop-Indicator" transform="translate(80, 1460)">
+      <rect width="1240" height="100" rx="20" fill="#0A101D" stroke="#00F0FF" stroke-opacity="0.3" stroke-dasharray="6 6"/>
+      <text x="40" y="45" fill="#00F0FF" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">⚡ SCROLL-DRIVEN MOTION &amp; TEXT POP SPECIFICATION</text>
+      <text x="40" y="75" fill="#94A3B8" font-family="Inter, sans-serif" font-size="14">
+        As user scrolls: Headlines pop with elastic spring (y: 60px → 0px, scale: 0.95 → 1.0) • 3D models orbit smoothly on scroll delta (Three.js useScroll hook).
+      </text>
+    </g>
+
+    <!-- 6. FOOTER -->
+    <g id="Dark-Footer" transform="translate(80, 1680)">
+      <line x1="0" y1="0" x2="1240" y2="0" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="0" y="45" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="16" font-weight="800">IEEE BBDITM STUDENT BRANCH (STB10214)</text>
+      <text x="0" y="70" fill="#64748B" font-family="Inter, sans-serif" font-size="13">Babu Banarasi Das Institute of Technology and Management, Lucknow</text>
+      <circle cx="1180" cy="40" r="6" fill="#10B981" filter="url(#neon-glow)"/>
+      <text x="1200" y="44" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="12">ONLINE</text>
+    </g>
+  </g>
+
+
+  <!-- ================================================================= -->
+  <!-- ARTBOARD 2: LIGHT CRISP TECH MODE (X: 1520 to 2920, Y: 40 to 2000) -->
+  <!-- ================================================================= -->
+  <g id="Frame-Desktop-LightMode" transform="translate(1520, 40)">
+    <!-- Canvas Frame Background -->
+    <rect width="1400" height="1940" rx="24" fill="#F8FAFC"/>
+    <rect width="1400" height="1940" rx="24" fill="url(#light-bg-glow1)"/>
+    <rect width="1400" height="1940" rx="24" fill="url(#light-bg-glow2)"/>
+
+    <!-- Grid lines -->
+    <g opacity="0.08" stroke="#0F172A" stroke-width="0.75" stroke-dasharray="3 3">
+      <line x1="80" y1="0" x2="80" y2="1940"/>
+      <line x1="700" y1="0" x2="700" y2="1940"/>
+      <line x1="1320" y1="0" x2="1320" y2="1940"/>
+    </g>
+
+    <!-- Artboard Tag -->
+    <rect x="80" y="-30" width="180" height="24" rx="12" fill="#00629B" fill-opacity="0.15"/>
+    <text x="96" y="-14" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700">● LIGHT MODE (CRISP)</text>
+
+    <!-- 1. NAVBAR (LIGHT) -->
+    <g id="Light-Navbar" transform="translate(80, 24)">
+      <rect width="1240" height="68" rx="34" fill="#FFFFFF" fill-opacity="0.9" stroke="#E2E8F0" stroke-width="1" filter="url(#light-card-shadow)"/>
+      <!-- Brand -->
+      <polygon points="46,16 62,34 46,52 30,34" fill="none" stroke="#00629B" stroke-width="2"/>
+      <circle cx="46" cy="34" r="3.5" fill="#00629B"/>
+      <text x="74" y="41" fill="#0F172A" font-family="Inter, sans-serif" font-size="18" font-weight="800">IEEE</text>
+      <text x="122" y="41" fill="#00629B" font-family="Inter, sans-serif" font-size="15" font-weight="600">BBDITM</text>
+      
+      <!-- Nav Links -->
+      <g fill="#475569" font-family="Inter, sans-serif" font-size="14" font-weight="500">
+        <text x="360" y="40" fill="#00629B" font-weight="600">Home</text>
+        <text x="430" y="40">About</text>
+        <text x="500" y="40">Chapters ▾</text>
+        <text x="600" y="40">Leadership</text>
+        <text x="700" y="40">Events</text>
+        <text x="770" y="40">Research</text>
+      </g>
+
+      <!-- Theme Switcher Pill -->
+      <rect x="940" y="16" width="120" height="36" rx="18" fill="#F1F5F9" stroke="#CBD5E1"/>
+      <text x="956" y="39" fill="#0F172A" font-family="Inter, sans-serif" font-size="12" font-weight="600">☀️ Light</text>
+      <circle cx="1038" cy="34" r="10" fill="#00629B" fill-opacity="0.2"/>
+      <circle cx="1038" cy="34" r="5" fill="#00629B"/>
+
+      <!-- CTA -->
+      <rect x="1080" y="16" width="130" height="36" rx="18" fill="url(#royal-blue-grad)"/>
+      <text x="1114" y="39" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="13" font-weight="700">Join Branch</text>
+    </g>
+
+    <!-- 2. HERO: LIGHT (MODEL 1) -->
+    <g id="Light-Hero" transform="translate(80, 130)">
+      <rect x="0" y="10" width="300" height="30" rx="15" fill="#00629B" fill-opacity="0.1" stroke="#00629B" stroke-opacity="0.2"/>
+      <circle cx="18" cy="25" r="4" fill="#00629B"/>
+      <text x="32" y="29" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">IEEE BBDITM STB10214 • LUCKNOW</text>
+
+      <text x="0" y="100" fill="#0F172A" font-family="Inter, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">INNOVATING</text>
+      <text x="0" y="160" fill="#0F172A" font-family="Inter, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">TOMORROW</text>
+      <text x="0" y="220" fill="url(#royal-blue-grad)" font-family="Inter, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">IEEE BBDITM.</text>
+
+      <text x="0" y="270" fill="#64748B" font-family="Inter, sans-serif" font-size="16">Empowering 500+ innovators across AI, Robotics, Power Systems,</text>
+      <text x="0" y="295" fill="#64748B" font-family="Inter, sans-serif" font-size="16">and Electrical Engineering with global IEEE recognition.</text>
+
+      <rect x="0" y="330" width="170" height="50" rx="25" fill="url(#royal-blue-grad)"/>
+      <text x="36" y="361" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="14" font-weight="700">Explore Chapters</text>
+
+      <rect x="190" y="330" width="140" height="50" rx="25" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" filter="url(#light-card-shadow)"/>
+      <text x="228" y="361" fill="#0F172A" font-family="Inter, sans-serif" font-size="14" font-weight="600">Join Us →</text>
+
+      <!-- 3D MODEL 1: In Light Mode (Crystal Blue Diamond) -->
+      <g id="3D-Model-1-Light" transform="translate(740, 20)">
+        <text x="120" y="0" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">MODEL 01: 3D CRYSTAL CORE</text>
+        <ellipse cx="230" cy="180" rx="220" ry="70" fill="none" stroke="#00A3FF" stroke-opacity="0.4" stroke-width="1.5" transform="rotate(-20 230 180)"/>
+        
+        <!-- Faceted Crystal Diamond -->
+        <polygon points="230,20 370,180 230,340 90,180" fill="#00A3FF" fill-opacity="0.08" stroke="#00629B" stroke-width="2.5"/>
+        <line x1="230" y1="20" x2="230" y2="340" stroke="#00629B" stroke-opacity="0.5" stroke-width="1.5"/>
+        <line x1="90" y1="180" x2="370" y2="180" stroke="#00629B" stroke-opacity="0.5" stroke-width="1.5"/>
+        <line x1="230" y1="20" x2="190" y2="180" stroke="#00A3FF" stroke-width="1.5"/>
+        <line x1="230" y1="20" x2="270" y2="180" stroke="#00A3FF" stroke-width="1.5"/>
+        <line x1="190" y1="180" x2="230" y2="340" stroke="#00A3FF" stroke-width="1.5"/>
+        <line x1="270" y1="180" x2="230" y2="340" stroke="#00A3FF" stroke-width="1.5"/>
+
+        <circle cx="230" cy="180" r="32" fill="#00A3FF" fill-opacity="0.25"/>
+        <circle cx="230" cy="180" r="14" fill="#00629B"/>
+      </g>
+    </g>
+
+    <!-- 3. REAL PROFESSORS (LIGHT MODE) -->
+    <g id="Light-Leadership-Section" transform="translate(80, 580)">
+      <text x="0" y="24" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" letter-spacing="2">BRANCH LEADERSHIP (STB10214)</text>
+      <text x="0" y="60" fill="#0F172A" font-family="Inter, sans-serif" font-size="30" font-weight="800">Faculty Counselors &amp; Office Bearers</text>
+      <text x="0" y="88" fill="#64748B" font-family="Inter, sans-serif" font-size="15">Guiding technological innovation and professional ethics at BBDITM.</text>
+
+      <!-- Light Card 1 -->
+      <g transform="translate(0, 115)">
+        <rect width="290" height="280" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#light-card-shadow)"/>
+        <circle cx="70" cy="70" r="42" fill="#F1F5F9" stroke="#00629B" stroke-width="2"/>
+        <text x="56" y="78" fill="#0F172A" font-family="Inter, sans-serif" font-size="22" font-weight="700">👨‍🏫</text>
+        
+        <rect x="180" y="48" width="90" height="24" rx="12" fill="#00629B" fill-opacity="0.1"/>
+        <text x="194" y="64" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">FACULTY</text>
+
+        <text x="24" y="150" fill="#0F172A" font-family="Inter, sans-serif" font-size="18" font-weight="700">Dr. Shailendra T.</text>
+        <text x="24" y="174" fill="#00629B" font-family="Inter, sans-serif" font-size="13" font-weight="600">Branch Counselor</text>
+        <text x="24" y="200" fill="#64748B" font-family="Inter, sans-serif" font-size="12">Department of EE, BBDITM</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#E2E8F0"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">Ph.D, Senior Member IEEE</text>
+      </g>
+
+      <!-- Light Card 2 -->
+      <g transform="translate(315, 115)">
+        <rect width="290" height="280" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#light-card-shadow)"/>
+        <circle cx="70" cy="70" r="42" fill="#F1F5F9" stroke="#00629B" stroke-width="2"/>
+        <text x="56" y="78" fill="#0F172A" font-family="Inter, sans-serif" font-size="22" font-weight="700">👨‍🏫</text>
+        
+        <rect x="180" y="48" width="90" height="24" rx="12" fill="#00629B" fill-opacity="0.1"/>
+        <text x="194" y="64" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">ADVISOR</text>
+
+        <text x="24" y="150" fill="#0F172A" font-family="Inter, sans-serif" font-size="18" font-weight="700">Prof. Anurag S.</text>
+        <text x="24" y="174" fill="#00629B" font-family="Inter, sans-serif" font-size="13" font-weight="600">Faculty Advisor - PES</text>
+        <text x="24" y="200" fill="#64748B" font-family="Inter, sans-serif" font-size="12">Department of EEE, BBDITM</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#E2E8F0"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">M.Tech, IEEE PES Chapter</text>
+      </g>
+
+      <!-- Light Card 3: Student Chair -->
+      <g transform="translate(630, 115)">
+        <rect width="290" height="280" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#light-card-shadow)"/>
+        <circle cx="70" cy="70" r="42" fill="#F1F5F9" stroke="#10B981" stroke-width="2"/>
+        <text x="56" y="78" fill="#0F172A" font-family="Inter, sans-serif" font-size="22" font-weight="700">👨‍🎓</text>
+
+        <rect x="180" y="48" width="90" height="24" rx="12" fill="#10B981" fill-opacity="0.15"/>
+        <text x="202" y="64" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">CHAIR</text>
+
+        <text x="24" y="150" fill="#0F172A" font-family="Inter, sans-serif" font-size="18" font-weight="700">Ayush K. Singh</text>
+        <text x="24" y="174" fill="#10B981" font-family="Inter, sans-serif" font-size="13" font-weight="600">Student Branch Chair</text>
+        <text x="24" y="200" fill="#64748B" font-family="Inter, sans-serif" font-size="12">B.Tech Engineering '25</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#E2E8F0"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">IEEE STB10214 Executive</text>
+      </g>
+
+      <!-- Light Card 4: WIE Chair -->
+      <g transform="translate(945, 115)">
+        <rect width="295" height="280" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#light-card-shadow)"/>
+        <circle cx="70" cy="70" r="42" fill="#F1F5F9" stroke="#9333EA" stroke-width="2"/>
+        <text x="56" y="78" fill="#0F172A" font-family="Inter, sans-serif" font-size="22" font-weight="700">👩‍🎓</text>
+
+        <rect x="180" y="48" width="95" height="24" rx="12" fill="#9333EA" fill-opacity="0.15"/>
+        <text x="195" y="64" fill="#9333EA" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700">WIE CHAIR</text>
+
+        <text x="24" y="150" fill="#0F172A" font-family="Inter, sans-serif" font-size="18" font-weight="700">Ananya Verma</text>
+        <text x="24" y="174" fill="#9333EA" font-family="Inter, sans-serif" font-size="13" font-weight="600">WIE Affinity Group Chair</text>
+        <text x="24" y="200" fill="#64748B" font-family="Inter, sans-serif" font-size="12">Lead, 'My Story' Initiative</text>
+        
+        <line x1="24" y1="225" x2="266" y2="225" stroke="#E2E8F0"/>
+        <text x="24" y="254" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">Women In Engineering IEEE</text>
+      </g>
+    </g>
+
+    <!-- 4. LIGHT 3D MODELS (2 & 3) -->
+    <g id="Light-3D-Models" transform="translate(80, 1050)">
+      <!-- Left Card with MODEL 2 -->
+      <g transform="translate(0, 0)">
+        <rect width="590" height="360" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#light-card-shadow)"/>
+        <text x="40" y="45" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">MODEL 02: NEURAL &amp; ENERGY SPHERE</text>
+        <text x="40" y="85" fill="#0F172A" font-family="Inter, sans-serif" font-size="24" font-weight="800">Robotics &amp; Power Labs</text>
+        <text x="40" y="115" fill="#64748B" font-family="Inter, sans-serif" font-size="14">Real-time WebGL node simulation for PES Day &amp; AI bootcamp.</text>
+
+        <!-- Model 2 Render in Light Mode -->
+        <g transform="translate(360, 210)">
+          <circle cx="0" cy="0" r="95" fill="none" stroke="#00A3FF" stroke-dasharray="6 6" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="75" fill="none" stroke="#00629B" stroke-width="2"/>
+          <circle cx="0" cy="0" r="45" fill="#00A3FF" fill-opacity="0.3"/>
+          <circle cx="0" cy="0" r="15" fill="#00629B"/>
+          <circle cx="65" cy="-45" r="5" fill="#00629B"/>
+          <line x1="0" y1="0" x2="65" y2="-45" stroke="#00629B" stroke-width="1"/>
+          <text x="75" y="-40" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="10">Telemetry: 100%</text>
+        </g>
+
+        <rect x="40" y="270" width="180" height="42" rx="21" fill="url(#royal-blue-grad)"/>
+        <text x="64" y="296" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="13" font-weight="700">Explore Hardware Lab</text>
+      </g>
+
+      <!-- Right Card with MODEL 3 -->
+      <g transform="translate(630, 0)">
+        <rect width="610" height="360" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#light-card-shadow)"/>
+        <text x="40" y="45" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">MODEL 03: 3D FLIPPABLE VIP PASS</text>
+        <text x="40" y="85" fill="#0F172A" font-family="Inter, sans-serif" font-size="24" font-weight="800">Annual Flagship Summit '26</text>
+        <text x="40" y="115" fill="#64748B" font-family="Inter, sans-serif" font-size="14">Dynamic NFC / QR ticket pass with real-time 3D tilt interaction.</text>
+
+        <!-- 3D Pass Render (Light Mode) -->
+        <g transform="translate(380, 50)">
+          <rect x="85" y="0" width="30" height="18" rx="4" fill="#CBD5E1"/>
+          <line x1="100" y1="18" x2="100" y2="35" stroke="#94A3B8" stroke-width="4"/>
+          <rect x="10" y="35" width="180" height="250" rx="16" fill="#F8FAFC" stroke="#00629B" stroke-width="1.5" filter="url(#light-card-shadow)"/>
+          <rect x="25" y="55" width="45" height="18" rx="9" fill="#00629B" fill-opacity="0.1"/>
+          <text x="32" y="68" fill="#00629B" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700">VIP PASS</text>
+          
+          <text x="25" y="105" fill="#0F172A" font-family="Inter, sans-serif" font-size="15" font-weight="800">TECHNOVA '26</text>
+          <text x="25" y="125" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="10">ID: BBD-8902-STB</text>
+        </g>
+
+        <rect x="40" y="270" width="180" height="42" rx="21" fill="url(#royal-blue-grad)"/>
+        <text x="64" y="296" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="13" font-weight="700">Claim Digital Pass →</text>
+      </g>
+    </g>
+
+    <!-- 5. FOOTER (LIGHT) -->
+    <g id="Light-Footer" transform="translate(80, 1680)">
+      <line x1="0" y1="0" x2="1240" y2="0" stroke="#CBD5E1"/>
+      <text x="0" y="45" fill="#0F172A" font-family="Inter, sans-serif" font-size="16" font-weight="800">IEEE BBDITM STUDENT BRANCH (STB10214)</text>
+      <text x="0" y="70" fill="#64748B" font-family="Inter, sans-serif" font-size="13">Babu Banarasi Das Institute of Technology and Management, Lucknow</text>
+      <circle cx="1180" cy="40" r="6" fill="#10B981"/>
+      <text x="1200" y="44" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="12">ONLINE</text>
+    </g>
+  </g>
+</svg>
